@@ -9,7 +9,7 @@ const Main = () => {
       <main className="lg:ml-[50%] xl:ml-[40%] bg-navy min-h-screen">
         <div className="p-8 lg:p-16">
           {/* About Section */}
-          <section id="about" className="mb-24">
+          <section id="about" className="mb-12">
             <h2 className="text-3xl font-bold text-white mb-6 flex items-center">
              About Me
             </h2>
@@ -39,6 +39,14 @@ const Main = () => {
               </p>
             </div>
           </section>
+
+          <a
+           href="/resume.pdf" 
+           target="_blank"
+           rel="noopener noreferrer"
+           className='inline-block px-8 py-4 mb-18 border-2 border-white text-white rounded-lg hover:bg-white hover:text-black hover:bg-opacity-10 transition-all duration-300 font-semibold'>
+            View Resume
+          </a>
 
           {/* Experience Section */}
           {/* <section id="experience" className="mb-24">
@@ -111,8 +119,7 @@ const Main = () => {
             </p>
             <a
               href="mailto:mrrssoni12@gmail.com?subject=Hello&body=I%20am%20contacting%20you%20regarding..."
-              className="inline-block px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-black hover:bg-opacity-10 transition-all duration-300 font-semibold"
-            >
+              className="inline-block px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-black hover:bg-opacity-10 transition-all duration-300 font-semibold">
               Say Hello
             </a>
           </section>
