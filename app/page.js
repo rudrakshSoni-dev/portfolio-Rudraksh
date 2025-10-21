@@ -7,7 +7,7 @@ import Main from "@/components/sections/Main";
 
 export default function Home() {
   return (
-    <div className="flex">
+    <div className="lg:flex flex-col">
      <Sidebar />
      <Main />
     </div>

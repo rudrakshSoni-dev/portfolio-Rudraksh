@@ -9,7 +9,7 @@ const Sidebar = () => {
         {/* Header Section */}
         <div>
           <header className="mb-6">
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 ">
+            <h1 className="text-4xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 ">
               Rudraksh
               Soni
             </h1>
@@ -23,7 +23,7 @@ const Sidebar = () => {
 
           {/* Navigation Links */}
           <nav className="mb-6 lg:mb-4 lg:mt-0 text-slate-300 hidden lg:block">
-            <ul className="space-y-2">
+            <ul className="space-y-6">
               {['About', 'Experience', 'Projects', 'Contact'].map((item) => (
                 <li key={item}>
                   <a
