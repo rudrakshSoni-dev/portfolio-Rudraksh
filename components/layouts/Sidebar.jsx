@@ -44,7 +44,7 @@ const Sidebar = () => {
         {/* Social Links */}
         <div className="flex gap-6 mt-0 lg:mt-2">
           <a
-            href="https://github.com"
+            href="https://github.com/rudrakshSoni-dev/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-slate hover:text-green transition-colors duration-300 hover:-translate-y-1 transform"
@@ -52,7 +52,7 @@ const Sidebar = () => {
             <Github size={24} color='white' />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/rudraksh-soni-7674ab2aa/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-slate hover:text-green transition-colors duration-300 hover:-translate-y-1 transform"
@@ -60,7 +60,7 @@ const Sidebar = () => {
             <Linkedin size={24} color='white' />
           </a>
           <a
-            href="https://twitter.com"
+            href="https://x.com/soni_rudra81979"
             target="_blank"
             rel="noopener noreferrer"
             className="text-slate hover:text-green transition-colors duration-300 hover:-translate-y-1 transform"
@@ -68,7 +68,7 @@ const Sidebar = () => {
             <Twitter size={24} color='white' />
           </a>
           <a
-            href="mailto:rudraksh@example.com"
+            href="mailto:mrrssoni12@gmail.com"
             className="text-slate hover:text-green transition-colors duration-300 hover:-translate-y-1 transform"
           >
             <Mail size={24} color='white' />

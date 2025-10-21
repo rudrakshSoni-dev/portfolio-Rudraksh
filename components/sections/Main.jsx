@@ -2,7 +2,7 @@ import React from 'react';
 import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
 
 
-const Sidebar = () => {
+const Main = () => {
   return (
     <>
       {/* Main Content Area - appears on right on desktop, below on mobile */}
@@ -25,13 +25,23 @@ const Sidebar = () => {
                 how the web works!
               </p>
               <p>
-                Fast-forward to today, and I have had decent experience, building on the web while having hands on experience with libraries and frameworks like <span className='text-white'>Node, React, Next , Express , MongoDB , SQL , Postman ,  .</span>
+                Fast-forward to today, and I have had decent experience, building on the web while having hands on experience with libraries and frameworks like <span className='text-white'>HTML , CSS , JS , Node , React, Next , Express , MongoDB , SQL , Postman , Git , GitHub , Figma , Notion , TypeScript and JS.</span>
+              </p>
+              <p>
+                I am pursuing degree of Bachelor BTech in Electronics and Communication Engineering from BIT Mesra a reputated GFTI in Ranchi , Eastern India . 
+              </p>
+              <p>
+                I also have deep interest in problem solving , data structures and algorithms . I love to participate in competitive programming contests on various platforms .
+                You may check out my profile on <a className='text-white underline' href='www.leetcode.com' >LeetCode</a> where i have solved more than <span className='text-white'>200</span> problems .
+              </p>
+              <p>
+                Apart from academics and coding , I love running (<a className='text-white underline' href='www.strava.com' >Strava</a>), listening music (<a className='text-white underline' href='www.spotify.com.com'>Spotify</a>) and reading books. I also do have a <span className='text-white'>great passion towards startups and business , and would love to work with one , especially startups with small teams and more flexiblity.</span>
               </p>
             </div>
           </section>
 
           {/* Experience Section */}
-          <section id="experience" className="mb-24">
+          {/* <section id="experience" className="mb-24">
             <h2 className="text-3xl font-bold text-white mb-6 flex items-center">
               Experience
             </h2>
@@ -61,7 +71,7 @@ const Sidebar = () => {
                 </div>
               ))}
             </div>
-          </section>
+          </section> */}
 
           {/* Projects Section */}
           <section id="projects" className="mb-24">
@@ -81,7 +91,7 @@ const Sidebar = () => {
                     A web app for visualizing personalized data. View your top artists, tracks, and more.
                   </p>
                   <div className="flex gap-4 text-slate">
-                    <a href="#" className="hover:text-green transition-colors">
+                    <a href="https://github.com/rudrakshSoni-dev/" className="hover:text-green transition-colors">
                       <Github size={20} color='white' />
                     </a>
                   </div>
@@ -100,7 +110,7 @@ const Sidebar = () => {
               to say hi, I'll try my best to get back to you!
             </p>
             <a
-              href="mailto:mrrssoni12@gmail.com"
+              href="mailto:mrrssoni12@gmail.com?subject=Hello&body=I%20am%20contacting%20you%20regarding..."
               className="inline-block px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-black hover:bg-opacity-10 transition-all duration-300 font-semibold"
             >
               Say Hello
@@ -112,4 +122,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default Main ;
