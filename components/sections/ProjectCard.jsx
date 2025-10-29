@@ -37,15 +37,15 @@ function ProjectCard({src,alt,name,about,link,githubLink,techStack}){
    
 
 
-    <section className="ml-[14px] mt-2 max-md:h-[400px] max-md:w-[500px] border-white rounded-lg">
+    <section className="ml-[14px] max-w-10/10 mt-2 max-md:h-[400px] max-md:w-[500px] border-white rounded-lg">
 
 
-<div className="relative border-white rounded-xl hover:shadow-cyan-50 hover:border-[3px] transition-all duration-300 ease-in-out overflow-hidden group">
+<div className="relative border-white max-w-10/10 rounded-xl hover:shadow-cyan-50 hover:border-[3px] transition-all duration-300 ease-in-out overflow-hidden group">
   
   <img
     src={src}
     alt={alt}
-    className="max-md:h-[390px] max-md:w-[500px] bg-white overflow-hidden transition duration-300 ease-in-out group-hover:blur-[2px]"
+    className="max-md:h-[390px] max-w-10/10 max-md:w-[500px] bg-white overflow-hidden transition duration-300 ease-in-out group-hover:blur-[2px]"
   />
 
   <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
