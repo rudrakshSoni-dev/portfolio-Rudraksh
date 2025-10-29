@@ -23,8 +23,8 @@ export default function VantaBackground() {
           scaleMobile: 1.0,
           waveHeight: 20,
           waveSpeed: 1.0,
-          color: 0x5588,
-          backgroundColor: 0x0a192f,
+          color: 0x5588,//0x5588, //0x0000
+          backgroundColor: 0xffff,
         })
       )
     }

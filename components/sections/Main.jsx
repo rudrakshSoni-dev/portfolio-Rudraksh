@@ -1,8 +1,11 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import ProjectCard from './ProjectCard';
+import ProjectData from '@/public/ProjectData'
 
 
 const Main = () => {
+  const stack = ['Postgress','Express','Clerk' ,'Nextjs', 'TailwindCSS', 'Node.js'];
   return (
     <>
       {/* Main Content Area - appears on right on desktop, below on mobile */}
@@ -10,10 +13,10 @@ const Main = () => {
         <div className="p-8 lg:p-16">
           {/* About Section */}
           <section id="about" className="mb-12">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center">
+            <h2 className="text-2xl font-bold text-white mb-4 flex items-center">
              About Me
             </h2>
-            <div className="text-slate-300 space-y-4">
+            <div className="text-slate-200 space-y-4">
               <p>
                 Hello! I'm Rudraksh, a software developer based in Kota, Raj, India. I enjoy creating
                 things that live on the internet, whether that be websites, applications, or
@@ -44,7 +47,7 @@ const Main = () => {
            href="/resume.pdf" 
            target="_blank"
            rel="noopener noreferrer"
-           className='inline-block px-8 py-4 mb-18 border-2 border-white text-white rounded-lg hover:bg-white hover:text-black hover:bg-opacity-10 transition-all duration-300 font-semibold'>
+           className='inline-block px-8 py-4 mb-22 border-2 border-white text-white rounded-lg hover:bg-white hover:text-black hover:bg-opacity-10 transition-all duration-300 font-semibold'>
             View Resume
           </a>
 
@@ -80,13 +83,25 @@ const Main = () => {
               ))}
             </div>
           </section> */}
-
+      
           {/* Projects Section */}
           <section id="projects" className="mb-24">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center">
+            <h2 className="text-2xl font-bold text-white mb-12 flex items-center">
              Projects
             </h2>
-            <div className="grid gap-6 md:grid-cols-2">
+            
+            
+            
+              {  ProjectData.map((project,index)=>
+                (
+                  <ProjectCard key={index} about={project.about} src={project.src} link={project.link} githubLink={project.githubLink} name={project.name} techStack={project.techStack} />
+                )
+                
+              )}
+             
+              
+            
+            {/* <div className="grid gap-6 md:grid-cols-2">
               {[1, 2, 3].map((item) => (
                 <div
                   key={item}
@@ -95,7 +110,7 @@ const Main = () => {
                   <h3 className="text-xl font-bold text-white mb-2 group-hover:text-green transition-colors">
                     Featured Project {item}
                   </h3>
-                  <p className="text-slate-300 mb-4">
+                  <p className="text-white mb-4">
                     A web app for visualizing personalized data. View your top artists, tracks, and more.
                   </p>
                   <div className="flex gap-4 text-slate">
@@ -105,15 +120,15 @@ const Main = () => {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </section>
 
           {/* Contact Section */}
           <section id="contact" className="mb-24">
-            <h2 className="text-3xl font-bold text-white mb-6 flex items-center">
+            <h2 className="text-2xl font-bold text-white mb-6 mt-0 flex items-center">
              Get In Touch
             </h2>
-            <p className="text-slate-300 mb-8 max-w-lg">
+            <p className="text-slate-200 mb-8 max-w-lg">
               I'm currently looking for new opportunities. Whether you have a question or just want
               to say hi, I'll try my best to get back to you!
             </p>

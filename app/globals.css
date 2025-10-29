@@ -9,6 +9,11 @@
   --lightest-slate: #ccd6f6;
   --white: #e6f1ff;
   --green: #64ffda;
+  --color:#ec0f0f ;
+}
+
+*{
+  font-family: 'inter', sans-serif;
 }
 
 html {
