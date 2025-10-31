@@ -37,7 +37,7 @@ function ProjectCard({src,alt,name,about,link,githubLink,techStack}){
    
 
 
-    <section className="ml-[14px] max-w-10/10 mt-2 max-md:h-[400px] max-md:w-[500px] border-white rounded-lg">
+<section className="ml-[14px] max-w-10/10 mt-2 max-md:h-[320px] max-md:w-[500px] border-white rounded-lg">
 
 
 <div className="relative border-white max-w-10/10 rounded-xl hover:shadow-cyan-50 hover:border-[3px] transition-all duration-300 ease-in-out overflow-hidden group">
@@ -45,7 +45,7 @@ function ProjectCard({src,alt,name,about,link,githubLink,techStack}){
   <img
     src={src}
     alt={alt}
-    className="max-md:h-[390px] max-w-10/10 max-md:w-[500px] bg-white overflow-hidden transition duration-300 ease-in-out group-hover:blur-[2px]"
+    className="max-md:h-[300px] max-md:w-[500px] bg-white overflow-hidden transition duration-300 ease-in-out group-hover:blur-[2px]"
   />
 
   <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -72,11 +72,9 @@ function ProjectCard({src,alt,name,about,link,githubLink,techStack}){
 
 </div>
 
-
-  <div className="flex"></div>
 </section>
 
-<p className='mt-[20px] ml-4 text-[14px] text-white'>{about}</p>
+<p className='mt-[20px] max-md:mt-[0px] max-md:text-[20px] ml-4 text-[14px] text-white'>{about}</p>
 
     <div className="mb-10 ml-2 flex flex-wrap gap-2 mt-5 max-width-[400px]">
        {
