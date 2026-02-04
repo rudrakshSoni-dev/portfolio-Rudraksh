@@ -52,24 +52,27 @@ const Main = () => {
           </a>
 
           {/* Experience Section */}
-          {/* <section id="experience" className="mb-24">
+          <section id="experience" className="mb-24">
             <h2 className="text-3xl font-bold text-white mb-6 flex items-center">
               Experience
             </h2>
             <div className="space-y-8">
-              {[1, 2].map((item) => (
+              {[1].map((item) => (
                 <div
                   key={item}
                   className="bg-light-navy rounded-lg p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
                 >
-                  <p className="text-xs text-slate-300 mb-2">2023 - PRESENT</p>
-                  <h3 className="text-xl font-bold text-white mb-2">
-                    Senior Developer • Company Name
+                  <p className="text-xs text-slate-300 mb-2">Oct 2025 - PRESENT</p>
+                  <h3 className="text-xl font-bold text-white mb-6">
+                    Full-Stack Developer • Anugat AI
                   </h3>
-                  <p className="text-slate-300 mb-4">
-                    Build and maintain critical components used to construct various web applications.
-                  </p>
-                  <div className="flex flex-wrap gap-2">
+                  <li className="text-slate-300 text-[14px] mb-4 ml-4">
+                    Designed and developed an AI-powered analytics dashboard end-to-end, owning both frontend architecture and backend API development.
+                  </li>
+                  <li className="text-slate-300 text-[14px] mb-4 ml-4">
+                    Built scalable REST APIs using Node.js and Express.js, improving data retrieval performance and overall system reliability.
+                  </li>
+                  <div className="flex flex-wrap gap-2 mt-8">
                     {['React', 'TypeScript', 'Node.js', 'Tailwind'].map((tech) => (
                       <span
                         key={tech}
@@ -82,7 +85,7 @@ const Main = () => {
                 </div>
               ))}
             </div>
-          </section> */}
+          </section>
       
           {/* Projects Section */}
           <section id="projects" className="mb-24">
